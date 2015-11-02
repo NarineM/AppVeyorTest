@@ -1,5 +1,9 @@
 build: false
 
+install:
+  - cinst -y pester
+
 test_script:
   - ps: |
-        White-Host "Hello world from AppVeyor!"
+        Write-Host "Hello world from AppVeyor!"
+        Invoke-Pester
