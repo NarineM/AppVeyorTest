@@ -1,0 +1,5 @@
+build: false
+
+test_script:
+  - ps: |
+        White-Host "Hello world from AppVeyor!"
